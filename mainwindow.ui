@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>872</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMnu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="newAct"/>
+    <addaction name="openAct"/>
+    <addaction name="saveAct"/>
+    <addaction name="saveAsAct"/>
+    <addaction name="saveAllAct"/>
+    <addaction name="closeAct"/>
+    <addaction name="closeAllAct"/>
+    <addaction name="exitAct"/>
+   </widget>
+   <widget class="QMenu" name="correctMnu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="cutAct"/>
+    <addaction name="copyAct"/>
+    <addaction name="insertAct"/>
+    <addaction name="deleteAct"/>
+    <addaction name="highlightAct"/>
+   </widget>
+   <widget class="QMenu" name="ConductorMnu">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="fileTreeAct"/>
+    <addaction name="activeFilesAct"/>
+   </widget>
+   <addaction name="fileMnu"/>
+   <addaction name="correctMnu"/>
+   <addaction name="ConductorMnu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="fileTreeDock">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <widget class="QTreeView" name="treeView">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="activeFilesDock">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <widget class="QListView" name="listView">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="newAct">
+   <property name="text">
+    <string>Новый</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="openAct">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="saveAct">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAsAct">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+  </action>
+  <action name="saveAllAct">
+   <property name="text">
+    <string>Сохранить все</string>
+   </property>
+  </action>
+  <action name="closeAct">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="closeAllAct">
+   <property name="text">
+    <string>Закрыть все</string>
+   </property>
+  </action>
+  <action name="exitAct">
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </action>
+  <action name="cutAct">
+   <property name="text">
+    <string>Вырезать</string>
+   </property>
+  </action>
+  <action name="copyAct">
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="insertAct">
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="deleteAct">
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </action>
+  <action name="highlightAct">
+   <property name="text">
+    <string>Выделить все</string>
+   </property>
+  </action>
+  <action name="fileTreeAct">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать проводник </string>
+   </property>
+  </action>
+  <action name="activeFilesAct">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать обозреватель открытых документов </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
